@@ -37,10 +37,7 @@ const createPrompt = (inputLanguage, inputCode) => {
             console.log(i);
         }
 
-    Natural language:
-        ${inputCode}
-
-        ${inputLanguage} code (no \\\\):
+    <code>
     `;
 };
 
