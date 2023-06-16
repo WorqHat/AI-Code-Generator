@@ -10,7 +10,7 @@ function HomePage() {
     return (
         <div>
             <Head>
-                <title>Text to Code Generator - Home</title>
+                <title>WorqHat AI - Text to Code Generator</title>
                 <meta name="description"
                       content="Generate human-readable code explanations effortlessly with WorqHat AI's Code to Text Generator. Transform complex lines of code into clear and concise descriptions, enabling better collaboration and comprehension. Unlock the power of AI to enhance your programming experience today."/>
             </Head>
