@@ -87,9 +87,17 @@ function Home() {
 
       let responseData = await fetchAIResponse(language, questionText);
       if (responseData?.status == 'success') {
-          const responseCode = responseData?.content || '';
-          setGeneratedCode(`${responseCode}`);
-          setLoading(false);
+
+          let responseCode = responseData?.content || '';
+          if (responseCode.includes('```')) {
+              responseCode = responseCode.split('```')[1];
+              setGeneratedCode(responseCode);
+              setLoading(false);
+          } else {
+              setGeneratedCode(`${responseCode}`);
+              setLoading(false);
+          }
+
       } else {
           setGeneratedCode('Sorry, we could not generate code for your question. Please try again.');
           setLoading(false);
