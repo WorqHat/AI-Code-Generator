@@ -72,7 +72,8 @@ need to follow the following steps:
 {
    "name": "Your Project Name",
    "description": "Your Project Description",
-   "deploymentUrl": "Your Project Deployment URL",
+   "deploymentUrl": "Your Project Deployment URL (If Deployed to Vercel)",
+   "githubUrl": "Your Project GitHub URL",
    "author": "Your Name",
    "authorEmail": "Your Email",
    "authorUrl": "Your Website",
