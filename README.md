@@ -44,21 +44,16 @@ need to follow the following steps:
 3. Add the following code to the `worqhat.json` file:
 
 ```json
-{
-   "name": "Your Project Name",
-   "description": "Your Project Description",
-   "deploymentUrl": "Your Project Deployment URL (If Deployed to Vercel)",
-   "githubUrl": "Your Project GitHub URL",
-   "author": "Your Name",
-   "authorEmail": "Your Email",
-   "authorUrl": "Your Website",
-   "repository": "Your Project Repository",
-   "license": "Your Project License",
-   "version": "Your Project Version",
-   "tags": [
-      "Your Project Tags"
-   ]
-}
+      {
+         "name": "Your Name",
+         "deploymentUrl": "Your Project Deployment URL (If Deployed to Vercel)",
+         "authorEmail": "Your Email",
+         "repository": "Your Project Repository",
+         "feedback": "Your Feedback",
+         "tags": [
+            "Your Project Tags"
+         ]
+      }
 ```
 
 4. Submit your project for certification by creating a pull request to the [WorqHat Certified
