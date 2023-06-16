@@ -9,8 +9,8 @@ function HomePage() {
     return (
         <div>
             <Head>
-                <title>My Next.js App - Home</title>
-                <meta name="description" content="Welcome to my Next.js application!" />
+                <title>Text to Code Generator - Home</title>
+                <meta name="description" content="Generate human-readable code explanations effortlessly with WorqHat AI's Code to Text Generator. Transform complex lines of code into clear and concise descriptions, enabling better collaboration and comprehension. Unlock the power of AI to enhance your programming experience today." />
             </Head>
 
             <Home />
@@ -92,24 +92,42 @@ function Home() {
 
   return (
       <div className="text-black">
-        <h1 className="text-4xl md:text-5xl text-center mt-8">Text to Code Generator</h1>
-        <div className="text-center mt-8 text-xl md:text-2xl">
+        <h1 className="text-4xl md:text-5xl text-center mt-8 font-bold">Text to Code Generator</h1>
+        <div className="text-center mt-8 text-xl md:text-2xl font-semibold">
           Generate Code from Natural Language using WorqHat AI in a Click!
         </div>
 
         <div className="container">
-      <input type="text" id="textbox1" className="input-animation" placeholder="Enter your text" />
-      <div>
-        <select id="language" className="select-animation">
+            <div className="mb-6">
+                <input type="text" id="textbox1" placeholder="Enter your Question here"
+                       className="block mx-auto w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500">
+                </input>
+            </div>
+        <select id="language" className="mx-auto mb-6 bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-4">
           <option value="">Select language</option>
-          <option value="c++">c++</option>
-          <option value="python">Python</option>
-          <option value="java">Java</option>
-          <option value="javascript">JavaScript</option>
-          <option value="php">PHP</option>
-          <option value="english">English</option>
+            <option value="c++">C++</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="javascript">JavaScript</option>
+            <option value="c#">C#</option>
+            <option value="ruby">Ruby</option>
+            <option value="go">Go</option>
+            <option value="swift">Swift</option>
+            <option value="php">PHP</option>
+            <option value="typescript">TypeScript</option>
+            <option value="kotlin">Kotlin</option>
+            <option value="rust">Rust</option>
+            <option value="matlab">MATLAB</option>
+            <option value="r">R</option>
+            <option value="perl">Perl</option>
+            <option value="scala">Scala</option>
+            <option value="objective-c">Objective-C</option>
+            <option value="groovy">Groovy</option>
+            <option value="lua">Lua</option>
+            <option value="bash">Bash</option>
+            <option value="powershell">PowerShell</option>
         </select>
-      </div>
+
       <button id="generateButton" onClick={handleGenerateCodeClick}>
         {loading ? 'Generating...' : 'Generate Code'}
       </button>
@@ -130,10 +148,10 @@ function Home() {
         <br />
       </div>
     </div>
-        <div>
+        <div className="text-center">
           <h2  className="text-center mt-6">Powered By</h2>
           <a href="https://worqhat.com">
-            <Image src={mypic} className="w-24" alt="WorqHat Logo" />
+            <Image src={mypic} className="w-24 mx-auto" alt="WorqHat Logo" />
           </a>
         </div>
         <div className="text-center mt-6 text-black hover:text-blue-700">
