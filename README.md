@@ -10,45 +10,20 @@ project using the latest Text Generation APIs. Cool, right?!Let's start with the
 and only Code Translator that you're ever going to want to build!
 
 But don't take my word for it, you gotta try it out for yourself. We've got a live code
-translator on this [page](https://devs.worqhat.com/WorqHatAPIs/AiText/aiconV2), that's already
+translator on this [page](https://text-to-code-with-worqhat-ai.vercel.app/), that's already
 causing a stir. People can't get enough of it! So, before you even start this course, go check it
 out and see what all the fuss is about.So, are you ready to step up and take on the challenge? Let's
 do this!
 
-### [View Live Project](https://devs.worqhat.com/WorqHatAPIs/AiText/aiconV2)
+### [View Live Project](https://text-to-code-with-worqhat-ai.vercel.app/)
 
-You can refer to more detailed documentation about
-AiConV2 [here](https://devs.worqhat.com/WorqHatAPIs/AiText/aiconV2).
+You can refer to more detailed documentation for **AiCon V2 Generative Models
+** [here](https://devs.worqhat.com/WorqHatAPIs/AiText/aiconV2).
 
 ## Getting Started
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the
-file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
-feedback and contributions are welcome!
+You can learn how to build this project by visiting our WorqHat LLM Academy Page at [Text to Code
+with WorqHat AI](https://worqhat.com/learn/text-to-code-with-worqhat-ai).
 
 ## Deploy on Vercel
 
