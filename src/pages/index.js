@@ -39,31 +39,27 @@ const createPrompt = (inputLanguage, inputCode) => {
 };
 
 async function fetchAIResponse(selectedLanguage, question) {
-    const API_ENDPOINT = 'https://api.worqhat.com/api/ai/content/v2';
+  const API_ENDPOINT = "https://api.worqhat.com/api/ai/content/v2";
+  const BEARER_TOKEN = `Bearer ${process.env.WORQHAT_API_KEY}`;
 
-    const API_KEY = process.env.WORQHAT_API_KEY;
-    const ORG_KEY = process.env.WORQHAT_ORG_KEY;
+  const prompt = createPrompt(selectedLanguage, question);
 
-    console.log(API_KEY);
+  const requestOptions = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Authorization: BEARER_TOKEN,
+    },
+    body: JSON.stringify({
+      question: prompt,
+      randomness: 0.4,
+    }),
+  };
 
-    const prompt = createPrompt(selectedLanguage, question);
-
-    const requestOptions = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-            'x-api-key': API_KEY,
-            'x-org-key': ORG_KEY,
-        },
-        body: JSON.stringify({
-            question: prompt,
-            randomness: 0.4,
-        }),
-    };
-
-    const response = await fetch(API_ENDPOINT, requestOptions);
-    return await response.json();
+  const response = await fetch(API_ENDPOINT, requestOptions);
+  return await response.json();
 }
+
 
 const Editor = dynamic(() => import('@monaco-editor/react'), {ssr: false});
 
