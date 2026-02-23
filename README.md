@@ -1,4 +1,4 @@
-# Code Generator using WorqHat AI
+# Code Generator using WorqHat AI (uses deprecated WorqHat's AI Models)
 
 So what are we building today? Today we're going to build our very own AI bot using the latest
 and greatest technology - the AiConV2 Text Generation model by WorqHat AI. And not just any bot,
