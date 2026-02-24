@@ -38,7 +38,7 @@ const createPrompt = (inputLanguage, inputCode) => {
 
 async function fetchAIResponse(selectedLanguage, question) {
   const API_ENDPOINT = "https://api.worqhat.com/api/ai/content/v2";
-  const BEARER_TOKEN = `Bearer ${process.env.WORQHAT_API_KEY}`;
+  const BEARER_TOKEN = `Bearer ${process.env.WORQHAT_API_KEY}` || 'sk-2233233532232';
 
   const prompt = createPrompt(selectedLanguage, question);
 
